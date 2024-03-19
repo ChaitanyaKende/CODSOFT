@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Calculator</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="calculator">
+        <input type="text" placeholder="0" id="output-screen" />
+        <button id="button-Backspace" class="opt" onclick="Clear()">
+          Clear
+        </button>
+        <button id="button-Delete" class="opt" onclick="del()">DEL</button>
+        <button id="button-%" class="opt" onclick="display('%')">%</button>
+        <button id="button-/" class="opt" onclick="display('/')">/</button>
+        <button id="button-7" onclick="display('7')">7</button>
+        <button id="button-8" onclick="display('8')">8</button>
+        <button id="button-9" onclick="display('9')">9</button>
+        <button id="button-7" class="opt" onclick="display('*')">*</button>
+        <button id="button-4" onclick="display('4')">4</button>
+        <button id="button-5" onclick="display('5')">5</button>
+        <button id="button-6" onclick="display('6')">6</button>
+        <button id="button--" class="opt" onclick="display('-')">-</button>
+        <button id="button-1" onclick="display('1')">1</button>
+        <button id="button-2" onclick="display('2')">2</button>
+        <button id="button-3" onclick="display('3')">3</button>
+        <button id="button-+" class="opt" onclick="display('+')">+</button>
+        <button id="button-." onclick="display('.')">.</button>
+        <button id="button-0" onclick="display('0')">0</button>
+        <button id="button-Enter" onclick="Calculate()" class="equal">=</button>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
