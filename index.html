@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chaitanya portfolio</title>
+    <link rel="stylesheet" href="/CSS/style.css" />
+    <link rel="stylesheet" href="/CSS/all.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="icon" type="Image.png" href="./Images/c-logo-removebg.png" />
+  </head>
+  <body>
+    <header>
+      <div id="sound">
+        <audio id="myAudio">
+          <source src="/Music/Ghostrifter-Official-Purple-Dream.mp3" />
+        </audio>
+        <i class="fa fa-soundcloud sound-cloud"></i>
+        <span>Sound</span>
+        <div class="on-off">
+          <span id="off">OFF</span>
+          <span id="on">ON</span>
+        </div>
+      </div>
+      <div class="btns-container">
+        <i class="fa fa-bars bars"></i>
+        <i class="fa fa-times times"></i>
+      </div>
+    </header>
+    <!-- sidebar -->
+    <aside class="aside">
+      <div class="aside-wrapper">
+        <div class="logo-section">
+          <a href="#" rel="home" class="logo">
+            <img src="/Images/c-logo-removebg.png" alt="logo" />
+            <span>Chaitanya</span>
+          </a>
+          <span>Web Developer</span>
+        </div>
+        <nav class="nav-links">
+          <a href="#section-about">About</a>
+          <!-- <a href="#">My Skills</a> -->
+          <a
+            href="https://github.com/ChaitanyaKende?tab=repositories"
+            target="_blank"
+            >Projects</a
+          >
+          <a href="#contact-me-section">Contact me</a>
+        </nav>
+        <!-- Social icons -->
+        <ul class="social-icons">
+          <li>
+            <a
+              href="https://www.linkedin.com/in/chaitanya-kende-9040a0252/"
+              target="_blank"
+            >
+              <i class="fa fa-linkedin"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/ChaitanyaKende" target="_blank">
+              <i class="fa fa-github"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </aside>
+
+    <!-- text zone section one -->
+    <section id="section-home" class="section-home">
+      <div class="text-zone">
+        <h1>
+          Hi, <br />I'm
+          <img src="/Images/c-logo-removebg.png" alt="Chaitanya" />haitanya,
+          <br />
+          web developer
+        </h1>
+        <p class="gray-text">Web Developer</p>
+        <br />
+        <a href="#contact-me-section" class="contact-button">
+          <div>
+            <span class="bg"></span>
+            <span class="base"></span>
+            <span class="text">Contact me!</span>
+          </div>
+        </a>
+      </div>
+      <!-- hover tree -->
+      <canvas
+        id="canvas"
+        style="position: absolute; left: 0; z-index: -1"
+      ></canvas>
+
+      <!--  -->
+      <div class="scroll-down">
+        <span>scroll down</span>
+        <i class="fa fa-arrow-down"></i>
+      </div>
+      <div class="scroll-down scroll-down-left">
+        <span>scroll down</span>
+        <i class="fa fa-arrow-down"></i>
+      </div>
+    </section>
+
+    <section id="summary">
+      <div id="header">
+        <h2>Summary</h2>
+      </div>
+      <div id="text-zone-2">
+        <p>
+          Seeking a challenging and responsible opportunities which will sharpen
+          my skill sets and become an asset of an organization.
+        </p>
+      </div>
+      <div id="fake-big-2">Summary</div>
+    </section>
+
+    <!-- the about me section -->
+    <section id="section-about">
+      <div class="text-zone-3">
+        <div id="header"><h2>About me</h2></div>
+        <p>
+          Hello, I'm Chaitanya Kende, a passionate web developer with
+          engineering background. Proficient in
+          <span class="techskills">HTML, CSS, JavaScript, C and C++.</span> I
+          strive to stay updated with the latest trends and technologies,
+          continuously expanding my knowledge and skill set. Eager to
+          collaborate with teams, learn from experienced professionals and
+          contribute to meaningful projects that positively impact users.
+        </p>
+        <div id="fake-big-me">Skills</div>
+      </div>
+      <div class="skill-charts">
+        <div id="myCanvasContainer">
+          <canvas width="400" height="400" id="myCanvas">
+            <ul id="tags">
+              <!-- <li><a>HTML</a></li> -->
+              <li>
+                <a><img src="Images/html.png" /></a>
+              </li>
+              <!-- <li><a>CSS</a></li> -->
+              <li>
+                <a><img src="Images/css.png" /></a>
+              </li>
+              <!-- <li><a>C</a></li> -->
+
+              <li>
+                <a><img src="Images/c.png" /></a>
+              </li>
+              <li>
+                <a><img src="/Images/React.png" /> </a>
+              </li>
+              <!-- <li><a>JavaScript</a></li> -->
+              <li>
+                <a><img src="Images/js.png" /></a>
+              </li>
+              <li>
+                <a><img src="Images/nodejs.png" /></a>
+              </li>
+              <li>
+                <a><img src="Images/mongoDB.png" /></a>
+              </li>
+            </ul>
+          </canvas>
+        </div>
+      </div>
+    </section>
+
+    <!-- contact me section -->
+    <div class="contact-section contact-wrapper" id="contact-me-section">
+      <div class="fake-big">@</div>
+      <form class="contact-form">
+        <div class="contact-heading">
+          <div id="header">
+            <h2>Contact me</h2>
+          </div>
+          <p>
+            If you have any frontend projects or opportunities, I'm eager to
+            hear from you.
+          </p>
+        </div>
+        <div class="form-input-wrapper">
+          <div class="form-input-group">
+            <input type="text " placeholder="Name" name="name" class="name" />
+            <span></span>
+          </div>
+          <div class="form-input-group">
+            <input
+              type="email"
+              name="email"
+              placeholder="Email"
+              class="email"
+            />
+            <span></span>
+          </div>
+        </div>
+        <div class="form-input-group">
+          <input
+            type="text"
+            name="subject"
+            placeholder="Subject"
+            class="subject"
+          />
+          <span></span>
+        </div>
+        <div class="form-input-group">
+          <textarea
+            type="text"
+            placeholder="Message "
+            class="textarea"
+            name="message"
+          ></textarea>
+          <span></span>
+        </div>
+        <div class="message"></div>
+        <button type="submit" class="contact-button submit-button">
+          <div>
+            <span class="bg"></span>
+            <span class="base"></span>
+            <span class="text">Send Message </span>
+          </div>
+        </button>
+      </form>
+      <div class="google-map">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d198.7151329369549!2d78.00610007300794!3d21.326494500826655!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bd42959b2ba8c0b%3A0x8f608f4d5d9b72cf!2sQueen%20Square!5e1!3m2!1sen!2sin!4v1688667853851!5m2!1sen!2sin"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+        <div class="map-content">
+          <p>Chaitanya Kende,</p>
+          <span>
+            India,Maharastra,Dist.Amravati<br />
+            444905 Morshi</span
+          >
+          <br />
+          <span>@:chaitanyakende25@gmail.com</span>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+    <script src="/JS/jquery.tagcanvas.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+
+    <!-- hover tree script tag -->
+    <script
+      type="text/javascript"
+      src="https://hovertree.com/texiao/html5/index/hovertreewelcome.js"
+    ></script>
+
+    <script src="/JS/index.js"></script>
+  </body>
+</html>
